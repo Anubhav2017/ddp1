@@ -1,0 +1,76 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+flatbuffers.h:2436:18:const uint8_t* flatbuffers::Table::GetVTable() const	24	static
+flatbuffers.h:2442:13:flatbuffers::voffset_t flatbuffers::Table::GetOptionalFieldOffset(flatbuffers::voffset_t) const	24	static
+schema_generated.h:1013:28:const char* const* tflite::EnumNamesBuiltinOperator()	4	static
+schema_generated.h:1166:20:const char* tflite::EnumNameBuiltinOperator(tflite::BuiltinOperator)	24	static
+schema_generated.h:10480:12:uint32_t tflite::Operator::opcode_index() const	16	static
+schema_generated.h:10483:39:const flatbuffers::Vector<long int>* tflite::Operator::inputs() const	16	static
+schema_generated.h:10486:39:const flatbuffers::Vector<long int>* tflite::Operator::outputs() const	16	static
+schema_generated.h:10835:39:const flatbuffers::Vector<unsigned char>* tflite::Operator::custom_options() const	16	static
+schema_generated.h:10844:39:const flatbuffers::Vector<long int>* tflite::Operator::intermediates() const	16	static
+schema_generated.h:11443:39:const flatbuffers::Vector<long int>* tflite::SubGraph::inputs() const	16	static
+schema_generated.h:11446:39:const flatbuffers::Vector<long int>* tflite::SubGraph::outputs() const	16	static
+schema_generated.h:11449:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >* tflite::SubGraph::operators() const	16	static
+schema_generated.h:11902:73:const flatbuffers::Vector<flatbuffers::Offset<tflite::OperatorCode> >* tflite::Model::operator_codes() const	16	static
+schema_generated.h:11905:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >* tflite::Model::subgraphs() const	16	static
+micro_graph.h:78:7:int tflite::MicroGraph::GetCurrentSubgraphIndex()	16	static
+micro_graph.h:82:24:tflite::SubgraphAllocations* tflite::MicroGraph::GetAllocations()	16	static
+micro_interpreter.h:73:10:size_t tflite::MicroInterpreter::inputs_size() const	16	static
+micro_interpreter.h:76:39:const flatbuffers::Vector<long int>& tflite::MicroInterpreter::inputs() const	16	static
+micro_interpreter.h:91:10:size_t tflite::MicroInterpreter::outputs_size() const	16	static
+micro_interpreter.h:94:39:const flatbuffers::Vector<long int>& tflite::MicroInterpreter::outputs() const	16	static
+micro_interpreter.h:137:7:int tflite::MicroInterpreter::get_subgraph_index()	16	static
+micro_interpreter.cc:36:1:tflite::MicroInterpreter::MicroInterpreter(const tflite::Model*, const tflite::MicroOpResolver&, uint8_t*, size_t, tflite::ErrorReporter*, tflite::MicroProfiler*)	24	static
+micro_interpreter.cc:56:1:tflite::MicroInterpreter::MicroInterpreter(const tflite::Model*, const tflite::MicroOpResolver&, tflite::MicroAllocator*, tflite::ErrorReporter*, tflite::MicroProfiler*)	24	static
+micro_interpreter.cc:73:1:tflite::MicroInterpreter::~MicroInterpreter()	16	static
+micro_interpreter.cc:79:6:void tflite::MicroInterpreter::Init(tflite::MicroProfiler*)	16	static
+micro_interpreter.cc:91:14:TfLiteStatus tflite::MicroInterpreter::PrepareNodeAndRegistrationDataFromFlatbuffer()	112	static
+micro_interpreter.cc:190:14:TfLiteStatus tflite::MicroInterpreter::AllocateTensors()	56	static
+micro_interpreter.cc:280:14:TfLiteStatus tflite::MicroInterpreter::Invoke()	24	static
+micro_interpreter.cc:295:15:TfLiteTensor* tflite::MicroInterpreter::input(size_t)	24	static
+micro_interpreter.cc:306:15:TfLiteTensor* tflite::MicroInterpreter::output(size_t)	24	static
+micro_interpreter.cc:317:14:TfLiteStatus tflite::MicroInterpreter::ResetVariableTensors()	16	static
+micro_interpreter.cc:321:7:static void* tflite::MicroInterpreter::AllocatePersistentBuffer(TfLiteContext*, size_t)	16	static
+micro_interpreter.cc:327:14:static TfLiteStatus tflite::MicroInterpreter::RequestScratchBufferInArena(TfLiteContext*, size_t, int*)	40	static
+micro_interpreter.cc:336:7:static void* tflite::MicroInterpreter::GetScratchBuffer(TfLiteContext*, int)	24	static
+micro_interpreter.cc:344:6:)	28	static
+micro_interpreter.cc:356:15:static TfLiteTensor* tflite::MicroInterpreter::GetTensor(const TfLiteContext*, int)	48	static
+micro_interpreter.cc:365:19:static TfLiteEvalTensor* tflite::MicroInterpreter::GetEvalTensor(const TfLiteContext*, int)	32	static
+micro_interpreter.cc:374:14:static TfLiteStatus tflite::MicroInterpreter::GetGraph(TfLiteContext*, TfLiteIntArray**)	24	static
+base.h:390:24:T flatbuffers::EndianScalar(T) [with T = long unsigned int]	16	static
+base.h:401:3:T flatbuffers::ReadScalar(const void*) [with T = short unsigned int]	16	static
+base.h:401:3:T flatbuffers::ReadScalar(const void*) [with T = long unsigned int]	16	static
+base.h:401:3:T flatbuffers::ReadScalar(const void*) [with T = long int]	16	static
+flatbuffers.h:55:13:bool flatbuffers::IsOutRange(const T&, const T&, const T&) [with T = tflite::BuiltinOperator]	24	static
+flatbuffers.h:2463:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<unsigned char>*]	16	static
+flatbuffers.h:2463:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<long int>*]	16	static
+flatbuffers.h:2452:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = long unsigned int]	32	static
+flatbuffers.h:2463:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	16	static
+flatbuffers.h:2463:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::OperatorCode> >*]	16	static
+flatbuffers.h:2463:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	16	static
+flatbuffers.h:252:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = unsigned char]	16	static
+flatbuffers.h:252:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = long int]	16	static
+flatbuffers.h:261:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = long int]	16	static
+flatbuffers.h:252:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::Operator>]	16	static
+flatbuffers.h:261:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::Operator>]	16	static
+flatbuffers.h:252:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::OperatorCode>]	16	static
+flatbuffers.h:261:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::OperatorCode>]	16	static
+flatbuffers.h:252:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+flatbuffers.h:261:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+flatbuffers.h:346:12:const T* flatbuffers::Vector<T>::data() const [with T = unsigned char]	16	static
+base.h:390:24:T flatbuffers::EndianScalar(T) [with T = long int]	16	static
+base.h:390:24:T flatbuffers::EndianScalar(T) [with T = short unsigned int]	16	static
+flatbuffers.h:2457:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<unsigned char>*]	24	static
+flatbuffers.h:2457:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<long int>*]	24	static
+flatbuffers.h:2457:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	24	static
+flatbuffers.h:2457:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::OperatorCode> >*]	24	static
+flatbuffers.h:2457:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	24	static
+flatbuffers.h:339:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = unsigned char]	16	static
+flatbuffers.h:109:22:static flatbuffers::IndirectHelper<T>::return_type flatbuffers::IndirectHelper<T>::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = long int]	16	static
+flatbuffers.h:339:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = long int]	16	static
+flatbuffers.h:117:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::Operator]	16	static
+flatbuffers.h:339:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::Operator>]	16	static
+flatbuffers.h:117:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::OperatorCode]	16	static
+flatbuffers.h:339:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::OperatorCode>]	16	static
+flatbuffers.h:117:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::SubGraph]	16	static
+flatbuffers.h:339:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static

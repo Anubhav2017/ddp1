@@ -1,0 +1,9 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+kernel_util.h:31:26:TfLiteEvalTensor* tflite::micro::GetMutableEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:40:32:const TfLiteEvalTensor* tflite::micro::GetEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:46:26:TfLiteEvalTensor* tflite::micro::GetEvalOutput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+pooling.cc:26:14:TfLiteStatus tflite::{anonymous}::AverageEval(TfLiteContext*, TfLiteNode*)	48	static
+pooling.cc:55:14:TfLiteStatus tflite::{anonymous}::MaxEval(TfLiteContext*, TfLiteNode*)	48	static
+pooling.cc:83:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	24	static
+pooling.cc:90:20:TfLiteRegistration tflite::Register_AVERAGE_POOL_2D()	24	static
+pooling.cc:101:20:TfLiteRegistration tflite::Register_MAX_POOL_2D()	24	static
