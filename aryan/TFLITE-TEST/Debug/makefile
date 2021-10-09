@@ -85,8 +85,8 @@ all: main-build
 main-build: TFLITE-TEST.elf secondary-outputs
 
 # Tool invocations
-TFLITE-TEST.elf: $(OBJS) $(USER_OBJS) C:\Users\agarw\Documents\ddp\aryan\TFLITE-TEST\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "TFLITE-TEST.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\agarw\Documents\ddp\aryan\TFLITE-TEST\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TFLITE-TEST.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+TFLITE-TEST.elf: $(OBJS) $(USER_OBJS) /home/aryan/Desktop/DDP/TFLITE-TEST/STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "TFLITE-TEST.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/aryan/Desktop/DDP/TFLITE-TEST/STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TFLITE-TEST.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

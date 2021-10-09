@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdio.h>
 #include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
@@ -389,26 +390,27 @@ static void MX_USART1_UART_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-  __HAL_RCC_GPIOI_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
+	__HAL_RCC_GPIOI_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOI, GPIO_PIN_1, GPIO_PIN_RESET);
+	GPIO_InitTypeDef gpioInitStructure;
 
-  /*Configure GPIO pin : PI1 */
-  GPIO_InitStruct.Pin = GPIO_PIN_1;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  HAL_GPIO_Init(GPIOI, &GPIO_InitStruct);
+	gpioInitStructure.Pin = GPIO_PIN_1;
+	gpioInitStructure.Mode = GPIO_MODE_OUTPUT_PP;
+	gpioInitStructure.Pull = GPIO_PULLUP;
+	gpioInitStructure.Speed = GPIO_SPEED_HIGH;
+	HAL_GPIO_Init(GPIOI, &gpioInitStructure);
+	HAL_GPIO_WritePin(GPIOI, GPIO_PIN_1, GPIO_PIN_RESET);
 
 }
 
 /* USER CODE BEGIN 4 */
+
+extern "C" void DebugLog(const char* s)
+{
+	HAL_UART_Transmit(&huart1, (uint8_t *)s, strlen(s), 100);
+}
 
 /* USER CODE END 4 */
 
