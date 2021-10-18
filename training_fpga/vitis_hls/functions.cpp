@@ -58,7 +58,39 @@ void backward_softmax(float* dz, float* da, float* a,int size_t){
     }
 }
 
+float mse_loss(float* pred, float* truth, int dim){
+    float loss=0;
+    for(int i=0;i<dim;i++){
+        loss+= pow(pred[i]-truth[i],2);
+    }
+    loss = loss/dim;
+    return loss;
+}
 
+void mse_gradient(float* pred, float* truth, float* grad,int dim){
+
+    for(int i=0;i<dim;i++){
+        grad[i]=(pred[i]-truth[i])/dim;
+    }
+    
+}
+
+float cross_entropy_loss(float* truth, float* est, int dim){
+    
+    float loss=0.0;
+    for(int i=0;i<dim;i++){
+        loss-=truth[i]*log(est[i]);
+    }
+
+    return loss;
+}
+
+void cross_entropy_derivative(float* q,int label,float* dz, int dim){
+    for(int i=0;i<dim;i++){
+        dz[i] = q[i];
+    }
+    dz[label] -= 1; 
+}
 
 int main(){
     float x[2] = {1.0, 2.0};
